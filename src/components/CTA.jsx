@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import {Link} from "react-router-dom";
 
 export default function CallToAction() {
     return (
@@ -18,20 +19,20 @@ export default function CallToAction() {
                     whileTap={{ scale: 0.95 }}
                 >
                     <div className="inline-flex rounded-md shadow">
-                        <a
-                            href="#"
+                        <Link
+                            to="/download"
                             className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
                         >
                             Download for iOS
-                        </a>
+                        </Link>
                     </div>
                     <div className="ml-3 inline-flex">
-                        <a
-                            href="#"
+                        <Link
+                            to="/download"
                             className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-800"
                         >
                             Download for Android
-                        </a>
+                        </Link>
                     </div>
                 </motion.div>
             </div>
